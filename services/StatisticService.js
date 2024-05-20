@@ -1211,7 +1211,7 @@ StatisticService.prototype.getBlockReward = function(height, callback) {
   }
 
   // Subsidy is cut in half every 2,100,000 blocks which will occur approximately every 4 years.
-  var subsidy = new BN(5000 * 1e8);
+  var subsidy = new BN(468 * 1e8);
   subsidy = subsidy.shrn(halvings);
   var sub;
   sub = parseInt(subsidy.toString(10));
@@ -1226,7 +1226,7 @@ StatisticService.prototype.getBlockRewardr = function(height) {
   }
 
   // Subsidy is cut in half every 2,100,000 blocks which will occur approximately every 4 years.
-  var subsidy = new BN(5000 * 1e8);
+  var subsidy = new BN(468 * 1e8);
   subsidy = subsidy.shrn(halvings);
 
   return parseInt(subsidy.toString(10));
